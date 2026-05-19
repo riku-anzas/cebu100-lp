@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>同世代セブ島100人留学プロジェクト ｜ 人生をバズらせろ。</title>
+<meta name="description" content="ただの語学留学じゃない。日本全国から集まる100人の挑戦者と、セブ島を舞台に人生を動かす次世代型プロジェクト。ANZAS GLOBAL EDUCATION CEBU。" />
+<meta name="theme-color" content="#0f172a" />
+
+<!-- OGP -->
+<meta property="og:title" content="100人留学プロジェクト ｜ 人生をバズらせろ。" />
+<meta property="og:description" content="日本全国から集まる100人の挑戦者と、セブ島を舞台に人生を動かす。" />
+<meta property="og:image" content="assets/hero.jpg" />
+<meta property="og:type" content="website" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800;900&family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap" rel="stylesheet" />
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer" />
+
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          ink:    '#0f172a',
+          navy:   '#1e3a8a',
+          navydk: '#0f1e44',
+          gold:   '#facc15',
+          gold600:'#eab308',
+          mist:   '#f8fafc',
+        },
+        fontFamily: {
+          sans:    ['"Noto Sans JP"', 'system-ui', 'sans-serif'],
+          display: ['Inter', '"Noto Sans JP"', 'sans-serif'],
+        },
+        letterSpacing: { tightest: '-0.04em' },
+        screens: { xs: '400px' },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+
+  ::selection { background: #facc15; color: #0f172a; }
+
+  ::-webkit-scrollbar { width: 10px; }
+  ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+
+  /* 縦書きの英字ラベル */
+  .vlabel { writing-mode: vertical-rl; letter-spacing: .35em; }
+
+  /* スクロール・フェードイン */
+  .reveal { opacity: 0; transform: translateY(28px); transition: opacity .9s cubic-bezier(.16,1,.3,1), transform .9s cubic-bezier(.16,1,.3,1); }
+  .reveal.in { opacity: 1; transform: none; }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { opacity: 1 !important; transform: none !important; transition: none; }
+    .hero-img { animation: none !important; }
+  }
+
+  /* 巨大セクション番号 */
+  .index-num {
+    font-family: Inter, sans-serif;
+    font-weight: 900;
+    line-height: 1;
+    letter-spacing: -0.04em;
+    color: #0f172a;
+    opacity: .055;
+  }
+
+  .hero-img { animation: heroZoom 18s ease-out forwards; }
+  @keyframes heroZoom { from { transform: scale(1.09); } to { transform: scale(1); } }
+
+  .ticker { animation: ticker 30s linear infinite; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+</style>
+</head>
+
+<body class="font-sans text-ink bg-white antialiased">
+
+<!-- ============ HEADER ============ -->
+<header class="fixed top-0 inset-x-0 z-50 transition-all duration-300" id="siteHeader">
+  <div class="mx-auto max-w-7xl px-5 sm:px-8">
+    <div class="flex items-center justify-between h-16 sm:h-20">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="assets/logo.png" alt="ANZAS GLOBAL EDUCATION CEBU" class="h-9 sm:h-11 w-auto" />
+        <span class="hidden sm:block text-[11px] font-display font-semibold tracking-[0.25em] text-ink/70">100&nbsp;PROJECT</span>
+      </a>
+      <a href="#apply"
+         class="group inline-flex items-center gap-2 rounded-full bg-gold px-4 sm:px-6 py-2.5 sm:py-3
+                text-[12px] sm:text-sm font-bold text-ink shadow-lg shadow-gold/30
+                hover:bg-gold600 transition-all duration-300 hover:-translate-y-0.5">
+        <span class="hidden xs:inline">5/20(水) 募集開始！</span>
+        <span>応募はこちら</span>
+        <i class="fa-solid fa-arrow-right text-[11px] transition-transform group-hover:translate-x-1"></i>
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- ============ HERO / MV ============ -->
+<section id="top" class="relative min-h-[100svh] flex items-center overflow-hidden bg-ink">
+  <img src="assets/hero.jpg" alt="セブ島 ANZAS GLOBAL EDUCATION CEBU のキャンパス全景"
+       class="hero-img absolute inset-0 h-full w-full object-cover" />
+  <div class="absolute inset-0 bg-gradient-to-br from-ink/90 via-ink/70 to-navy/60"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-ink/40"></div>
+
+  <div class="hidden lg:flex absolute left-8 top-1/2 -translate-y-1/2 items-center gap-4 text-white/45">
+    <span class="vlabel font-display text-[11px] font-semibold uppercase">Cebu • Philippines</span>
+    <span class="h-24 w-px bg-white/25"></span>
+  </div>
+
+  <div class="relative mx-auto max-w-7xl px-6 sm:px-10 w-full pt-28 pb-28">
+    <div class="max-w-4xl">
+      <div class="reveal flex items-center gap-3 mb-7">
+        <span class="h-px w-10 bg-gold"></span>
+        <span class="font-display text-[11px] sm:text-xs font-semibold tracking-[0.32em] text-gold uppercase">
+          ANZAS Global Education Cebu &nbsp;×&nbsp; 100 Project
+        </span>
+      </div>
+
+      <h1 class="reveal font-black tracking-tightest text-white leading-[1.04] text-[clamp(3rem,13vw,8.5rem)]">
+        人生を<br class="sm:hidden" />バズらせろ<span class="text-gold">。</span>
+      </h1>
+
+      <p class="reveal mt-8 sm:mt-10 max-w-2xl text-base sm:text-xl leading-relaxed sm:leading-loose text-white/85 font-light">
+        ただの語学留学じゃない。ただの海外旅行でもない。<br class="hidden sm:block" />
+        日本全国から集まる<span class="font-medium text-white">100人の挑戦者</span>と共に、セブ島を舞台に人生を動かすプロジェクト。<br class="hidden sm:block" />
+        ここでの出会い、経験、挑戦が、これからの人生の分岐点になる。
+      </p>
+
+      <div class="reveal mt-10 sm:mt-12 flex flex-col sm:flex-row sm:items-center gap-4 sm:gap-5">
+        <a href="#apply"
+           class="group inline-flex items-center justify-center gap-3 rounded-full bg-gold
+                  px-8 py-4 sm:py-5 text-sm sm:text-base font-bold text-ink
+                  shadow-xl shadow-gold/30 hover:bg-gold600 transition-all duration-300 hover:-translate-y-1">
+          5/20(水) 募集開始！詳細・応募はこちら
+          <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1.5"></i>
+        </a>
+        <a href="#what" class="inline-flex items-center justify-center gap-2 text-sm font-medium text-white/70 hover:text-white transition-colors px-2 py-2">
+          プロジェクトを見る
+          <i class="fa-solid fa-arrow-down text-xs"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-white/40">
+    <span class="font-display text-[10px] tracking-[0.3em] uppercase">Scroll</span>
+    <span class="h-10 w-px bg-gradient-to-b from-white/50 to-transparent"></span>
+  </div>
+</section>
+
+<!-- ============ TICKER ============ -->
+<div class="bg-ink text-white/55 py-4 overflow-hidden border-b border-white/5">
+  <div class="ticker flex whitespace-nowrap will-change-transform">
+    <div class="flex items-center gap-10 pr-10 font-display text-xs sm:text-sm font-medium tracking-[0.25em] uppercase">
+      <span>人生を動かす</span><span class="text-gold">✦</span><span>100 Challengers</span><span class="text-gold">✦</span><span>Cebu Island</span><span class="text-gold">✦</span><span>出会い・経験・挑戦</span><span class="text-gold">✦</span><span>ANZAS Global Education</span><span class="text-gold">✦</span>
+    </div>
+    <div class="flex items-center gap-10 pr-10 font-display text-xs sm:text-sm font-medium tracking-[0.25em] uppercase" aria-hidden="true">
+      <span>人生を動かす</span><span class="text-gold">✦</span><span>100 Challengers</span><span class="text-gold">✦</span><span>Cebu Island</span><span class="text-gold">✦</span><span>出会い・経験・挑戦</span><span class="text-gold">✦</span><span>ANZAS Global Education</span><span class="text-gold">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ============ ① WHAT IS 100 PROJECT? ============ -->
+<section id="what" class="relative bg-white py-24 sm:py-36">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10">
+    <div class="grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+
+      <div class="relative reveal order-2 lg:order-1">
+        <span class="index-num absolute -top-16 -left-2 text-[9rem] sm:text-[13rem] select-none pointer-events-none">01</span>
+        <div class="relative">
+          <div class="flex items-center gap-3 mb-6">
+            <span class="h-px w-10 bg-navy"></span>
+            <span class="font-display text-xs font-bold tracking-[0.3em] text-navy uppercase">What is 100 Project?</span>
+          </div>
+          <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">
+            100人留学<br class="sm:hidden" />プロジェクト<span class="text-navy">とは。</span>
+          </h2>
+          <p class="mt-8 text-base sm:text-lg leading-loose text-ink/70">
+            <span class="font-medium text-ink">「人生を変えたい」「何かを始めたい」「本気で挑戦したい」</span><br />
+            そんな若者100人をセブ島に集め、最高の環境・仲間・経験を提供する、
+            <span class="font-medium text-ink">次世代型プロジェクト</span>です。
+          </p>
+          <div class="mt-10 flex flex-wrap gap-3">
+            <span class="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-ink/70">#人生を変えたい</span>
+            <span class="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-ink/70">#何かを始めたい</span>
+            <span class="rounded-full border border-slate-200 px-4 py-2 text-sm font-medium text-ink/70">#本気で挑戦したい</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="reveal order-1 lg:order-2">
+        <div class="relative">
+          <div class="aspect-[4/5] sm:aspect-[4/4.4] overflow-hidden rounded-3xl bg-mist">
+            <img src="assets/study.jpg" alt="ANZAS で学ぶ参加者の様子"
+                 class="h-full w-full object-cover" loading="lazy" />
+          </div>
+          <div class="absolute -bottom-6 -left-4 sm:-left-8 bg-navy text-white rounded-2xl px-7 py-6 shadow-2xl shadow-navy/30">
+            <p class="font-display text-4xl sm:text-5xl font-black leading-none">100<span class="text-gold">.</span></p>
+            <p class="mt-1 text-[11px] tracking-[0.2em] text-white/70 uppercase">Challengers</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ② このプロジェクトで得られるもの ============ -->
+<section class="relative bg-mist py-24 sm:py-36">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10">
+    <div class="max-w-3xl reveal">
+      <div class="flex items-center gap-3 mb-6">
+        <span class="h-px w-10 bg-navy"></span>
+        <span class="font-display text-xs font-bold tracking-[0.3em] text-navy uppercase">What you gain</span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">
+        このプロジェクトで<br class="sm:hidden" />得られるもの
+      </h2>
+    </div>
+
+    <div class="mt-16 grid md:grid-cols-3 gap-6 lg:gap-8">
+
+      <div class="reveal group bg-white rounded-3xl border border-slate-200/80 p-9 sm:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-ink/5">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy text-xl group-hover:bg-navy group-hover:text-white transition-colors duration-500">
+            <i class="fa-solid fa-people-group"></i>
+          </span>
+          <span class="font-display text-5xl font-black text-slate-100 group-hover:text-gold/40 transition-colors">01</span>
+        </div>
+        <h3 class="mt-7 text-xl sm:text-2xl font-bold tracking-tight">圧倒的な出会い</h3>
+        <p class="mt-4 text-[15px] leading-loose text-ink/65">
+          全国から集まる挑戦者たち。起業を目指す人、SNSで発信している人、海外挑戦したい人、将来本気で何かを成し遂げたい人。普通に生きていたら出会えない仲間と繋がれる。
+        </p>
+      </div>
+
+      <div class="reveal group bg-white rounded-3xl border border-slate-200/80 p-9 sm:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-ink/5" style="transition-delay:.08s">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy text-xl group-hover:bg-navy group-hover:text-white transition-colors duration-500">
+            <i class="fa-solid fa-earth-asia"></i>
+          </span>
+          <span class="font-display text-5xl font-black text-slate-100 group-hover:text-gold/40 transition-colors">02</span>
+        </div>
+        <h3 class="mt-7 text-xl sm:text-2xl font-bold tracking-tight">海外という非日常環境</h3>
+        <p class="mt-4 text-[15px] leading-loose text-ink/65">
+          環境が変われば、人は変わる。日本を離れ、新しい価値観・文化・人に触れることで、人生の視野が一気に広がる。
+        </p>
+      </div>
+
+      <div class="reveal group bg-white rounded-3xl border border-slate-200/80 p-9 sm:p-10 transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl hover:shadow-ink/5" style="transition-delay:.16s">
+        <div class="flex items-center justify-between">
+          <span class="inline-flex h-14 w-14 items-center justify-center rounded-2xl bg-navy/5 text-navy text-xl group-hover:bg-navy group-hover:text-white transition-colors duration-500">
+            <i class="fa-solid fa-bolt"></i>
+          </span>
+          <span class="font-display text-5xl font-black text-slate-100 group-hover:text-gold/40 transition-colors">03</span>
+        </div>
+        <h3 class="mt-7 text-xl sm:text-2xl font-bold tracking-tight">人生を動かす“きっかけ”</h3>
+        <p class="mt-4 text-[15px] leading-loose text-ink/65">
+          このプロジェクトは、英語だけを学ぶ留学ではありません。挑戦する仲間と出会い、刺激を受け、行動を始める。人生を変える“始まり”を作る場所です。
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ③ EVENT CONTENTS ============ -->
+<section class="relative bg-white py-24 sm:py-36">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10">
+    <div class="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-6 reveal">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="h-px w-10 bg-navy"></span>
+          <span class="font-display text-xs font-bold tracking-[0.3em] text-navy uppercase">Event Contents</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">予定コンテンツ</h2>
+      </div>
+      <p class="text-sm text-ink/50 sm:text-right max-w-xs">日常では味わえない体験を、仲間と。<br />セブ島を遊び尽くす11のプログラム。</p>
+    </div>
+
+    <div class="mt-14 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-px bg-slate-200 rounded-3xl overflow-hidden border border-slate-200">
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-umbrella-beach text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">ビーチツアー</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-water text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">カワサン滝ツアー</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-lightbulb text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">ビジネスコンテスト</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-trophy text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">ギネス世界記録挑戦</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-person-running text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">現地での運動会</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-people-arrows text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">現地大学生との交流</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-hand-holding-heart text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">スラムでのボランティア活動</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-store text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">ナイトマーケット企画</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-champagne-glasses text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">ホテル交流会</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-utensils text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">食事会</span>
+      </div>
+      <div class="group bg-white p-6 sm:p-8 flex flex-col gap-4 hover:bg-mist transition-colors reveal">
+        <i class="fa-solid fa-graduation-cap text-navy text-2xl group-hover:scale-110 transition-transform"></i>
+        <span class="font-bold text-[15px] sm:text-base">卒業式パーティー</span>
+      </div>
+      <div class="relative bg-navy p-6 sm:p-8 flex items-end overflow-hidden reveal">
+        <img src="assets/activity-beach.jpg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-40" loading="lazy" />
+        <span class="relative font-display text-sm font-bold tracking-[0.2em] text-white uppercase">&amp; more</span>
+      </div>
+    </div>
+
+    <div class="mt-10 grid sm:grid-cols-2 gap-4 reveal">
+      <div class="relative aspect-[16/10] overflow-hidden rounded-3xl">
+        <img src="assets/activity-beach.jpg" alt="セブ島でのアイランドホッピング・ビーチアクティビティ" class="h-full w-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent"></div>
+        <span class="absolute bottom-5 left-6 text-white font-bold tracking-wide">Beach &amp; Island</span>
+      </div>
+      <div class="relative aspect-[16/10] overflow-hidden rounded-3xl">
+        <img src="assets/activity-falls.jpg" alt="カワサン滝での集合写真" class="h-full w-full object-cover" loading="lazy" />
+        <div class="absolute inset-0 bg-gradient-to-t from-ink/60 to-transparent"></div>
+        <span class="absolute bottom-5 left-6 text-white font-bold tracking-wide">Kawasan Falls</span>
+      </div>
+    </div>
+
+    <p class="mt-7 text-xs text-ink/45">※内容は変更となる場合があります。</p>
+  </div>
+</section>
+
+<!-- ============ ④ 開催概要 ============ -->
+<section class="relative bg-ink text-white py-24 sm:py-36 overflow-hidden">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10">
+    <div class="grid lg:grid-cols-12 gap-14 lg:gap-16">
+
+      <div class="lg:col-span-5 reveal">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="h-px w-10 bg-gold"></span>
+          <span class="font-display text-xs font-bold tracking-[0.3em] text-gold uppercase">Overview</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">開催概要</h2>
+        <div class="mt-10 aspect-[4/3] overflow-hidden rounded-3xl">
+          <img src="assets/facility.jpg" alt="ANZAS GLOBAL EDUCATION CEBU の校内施設" class="h-full w-full object-cover" loading="lazy" />
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 reveal">
+        <dl class="divide-y divide-white/10 border-t border-white/10">
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 py-5">
+            <dt class="sm:w-44 shrink-0 text-sm font-medium tracking-wider text-white/45">開催地</dt>
+            <dd class="text-lg font-medium">セブ島（フィリピン）</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 py-5">
+            <dt class="sm:w-44 shrink-0 text-sm font-medium tracking-wider text-white/45">学校</dt>
+            <dd><span class="font-display text-xl sm:text-2xl font-black tracking-tight">ANZAS GLOBAL EDUCATION CEBU</span></dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center gap-1 sm:gap-6 py-5">
+            <dt class="sm:w-44 shrink-0 text-sm font-medium tracking-wider text-white/45">参加人数</dt>
+            <dd class="text-lg font-medium">約100名予定</dd>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-6 py-5">
+            <dt class="sm:w-44 shrink-0 text-sm font-medium tracking-wider text-white/45">参加費</dt>
+            <dd>
+              <span class="font-display text-3xl sm:text-4xl font-black text-gold">298,000<span class="text-xl">円</span></span>
+              <span class="ml-2 text-sm text-white/50">（税込）</span>
+            </dd>
+          </div>
+        </dl>
+
+        <div class="mt-10 grid sm:grid-cols-2 gap-5">
+          <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-7">
+            <p class="flex items-center gap-2 text-sm font-bold text-gold mb-4">
+              <i class="fa-solid fa-circle-check"></i> 含まれるもの
+            </p>
+            <ul class="space-y-2.5 text-[14px] text-white/75 leading-relaxed">
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>留学費用</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>現地プログラム参加費</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>ホテル宿泊費</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>食事</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>現地イベント運営費</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>アクティビティツアー費用</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-check text-gold/70 mt-1 text-xs"></i>イベントの際の移動費（大型バスをチャーター予定）</li>
+            </ul>
+          </div>
+          <div class="rounded-2xl bg-white/[0.04] border border-white/10 p-7">
+            <p class="flex items-center gap-2 text-sm font-bold text-white/60 mb-4">
+              <i class="fa-solid fa-circle-xmark"></i> 含まれないもの
+            </p>
+            <ul class="space-y-2.5 text-[14px] text-white/65 leading-relaxed">
+              <li class="flex gap-2.5"><i class="fa-solid fa-xmark text-white/30 mt-1 text-xs"></i>航空券</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-xmark text-white/30 mt-1 text-xs"></i>海外旅行保険</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-xmark text-white/30 mt-1 text-xs"></i>SSP代</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-xmark text-white/30 mt-1 text-xs"></i>現地個人費用</li>
+              <li class="flex gap-2.5"><i class="fa-solid fa-xmark text-white/30 mt-1 text-xs"></i>その他雑費</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑤ 安全について ============ -->
+<section class="relative bg-white py-24 sm:py-36">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10">
+    <div class="grid lg:grid-cols-12 gap-14 lg:gap-16 items-start">
+
+      <div class="lg:col-span-4 reveal">
+        <div class="flex items-center gap-3 mb-6">
+          <span class="h-px w-10 bg-navy"></span>
+          <span class="font-display text-xs font-bold tracking-[0.3em] text-navy uppercase">Safety</span>
+        </div>
+        <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">安全について</h2>
+        <p class="mt-7 text-base leading-loose text-ink/65">
+          本プロジェクトでは、<span class="font-medium text-ink">100名規模での開催</span>に伴い、安全対策を徹底します。
+        </p>
+        <div class="mt-8 inline-flex items-center gap-3 rounded-2xl bg-navy/5 px-5 py-4 text-navy">
+          <i class="fa-solid fa-shield-halved text-2xl"></i>
+          <span class="text-sm font-bold leading-snug">参加者全員が安全に<br />楽しめる環境作りを行います。</span>
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 grid sm:grid-cols-2 gap-6 reveal">
+        <div class="rounded-3xl border border-slate-200 p-8 sm:p-9">
+          <p class="flex items-center gap-2.5 text-sm font-bold tracking-wider text-navy mb-6">
+            <i class="fa-solid fa-list-check"></i> 実施予定
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-circle-check text-navy mt-0.5"></i>オリエンテーション</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-circle-check text-navy mt-0.5"></i>行動ルール設定</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-circle-check text-navy mt-0.5"></i>緊急時対応体制</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-circle-check text-navy mt-0.5"></i>セキュリティ対策</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-circle-check text-navy mt-0.5"></i>夜間ルール整備</li>
+          </ul>
+        </div>
+        <div class="rounded-3xl bg-mist border border-slate-200 p-8 sm:p-9">
+          <p class="flex items-center gap-2.5 text-sm font-bold tracking-wider text-ink mb-6">
+            <i class="fa-solid fa-triangle-exclamation text-gold600"></i> 注意事項
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-minus text-ink/40 mt-1.5 text-xs"></i>飲酒制限あり</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-minus text-ink/40 mt-1.5 text-xs"></i>無断外出禁止</li>
+            <li class="flex items-start gap-3 text-[15px] text-ink/75"><i class="fa-solid fa-minus text-ink/40 mt-1.5 text-xs"></i>深夜行動制限あり</li>
+          </ul>
+          <p class="mt-7 pt-6 border-t border-slate-200 text-xs leading-relaxed text-ink/45">
+            ルールはすべて、参加者一人ひとりが安心して挑戦に集中するためのものです。
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ ⑥ 応募について ============ -->
+<section id="apply" class="relative bg-mist py-24 sm:py-36 scroll-mt-20">
+  <div class="mx-auto max-w-5xl px-6 sm:px-10">
+    <div class="text-center reveal">
+      <div class="inline-flex items-center gap-3 mb-6">
+        <span class="h-px w-10 bg-navy"></span>
+        <span class="font-display text-xs font-bold tracking-[0.3em] text-navy uppercase">Application</span>
+        <span class="h-px w-10 bg-navy"></span>
+      </div>
+      <h2 class="text-3xl sm:text-5xl font-black tracking-tight leading-[1.18]">応募について</h2>
+    </div>
+
+    <div class="mt-14 grid sm:grid-cols-2 gap-5 reveal">
+      <div class="rounded-3xl bg-white border border-slate-200 p-9 text-center">
+        <i class="fa-regular fa-calendar-check text-navy text-3xl"></i>
+        <p class="mt-5 text-sm font-medium tracking-wider text-ink/45">募集開始</p>
+        <p class="mt-2 font-display text-3xl sm:text-4xl font-black tracking-tight">5<span class="text-xl">月</span>20<span class="text-xl">日</span><span class="text-navy"> (水)</span></p>
+      </div>
+      <div class="rounded-3xl bg-white border border-slate-200 p-9 text-center">
+        <i class="fa-solid fa-paper-plane text-navy text-3xl"></i>
+        <p class="mt-5 text-sm font-medium tracking-wider text-ink/45">応募方法</p>
+        <p class="mt-2 text-xl sm:text-2xl font-bold tracking-tight">リンクから<br class="sm:hidden" />学校に直接応募</p>
+      </div>
+    </div>
+
+    <div class="mt-10 text-center reveal">
+      <a href="https://anzas-global.com/" target="_blank" rel="noopener noreferrer"
+         class="group inline-flex items-center justify-center gap-3 rounded-full bg-gold
+                px-10 py-5 sm:py-6 text-base sm:text-lg font-bold text-ink
+                shadow-xl shadow-gold/30 hover:bg-gold600 transition-all duration-300 hover:-translate-y-1">
+        5/20(水) 募集開始！詳細・応募はこちら
+        <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1.5"></i>
+      </a>
+      <p class="mt-6 text-xs text-ink/45">※応募多数の場合、先着制となる可能性があります。</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CLOSING ============ -->
+<section class="relative isolate flex items-center min-h-[88svh] overflow-hidden bg-ink">
+  <img src="assets/group.jpg" alt="100人留学プロジェクトに集まった参加者たち"
+       class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+  <div class="absolute inset-0 bg-ink/80"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-ink via-ink/55 to-ink"></div>
+
+  <div class="relative mx-auto max-w-4xl px-6 sm:px-10 text-center reveal">
+    <p class="font-display text-xs font-semibold tracking-[0.35em] text-gold uppercase mb-10">The next chapter</p>
+    <p class="text-2xl sm:text-4xl lg:text-5xl font-bold leading-[1.7] text-white tracking-tight">
+      人生は、どこに行くかで変わる。<br />
+      そして、誰と出会うかで変わる。<br />
+      <span class="text-white/70">セブ島を始まりの地に。</span><br />
+      次に人生を変えるのは、<span class="text-gold">君</span>かもしれない。
+    </p>
+
+    <div class="mt-14">
+      <a href="#apply"
+         class="group inline-flex items-center justify-center gap-3 rounded-full bg-gold
+                px-10 py-5 sm:py-6 text-base sm:text-lg font-bold text-ink
+                shadow-2xl shadow-gold/30 hover:bg-gold600 transition-all duration-300 hover:-translate-y-1">
+        5/20(水) 募集開始！詳細・応募はこちら
+        <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1.5"></i>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="bg-ink border-t border-white/10 text-white/55">
+  <div class="mx-auto max-w-7xl px-6 sm:px-10 py-14">
+    <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-8">
+      <div class="flex items-center gap-4">
+        <img src="assets/logo.png" alt="ANZAS GLOBAL EDUCATION CEBU" class="h-10 w-auto brightness-0 invert opacity-80" />
+        <div class="leading-tight">
+          <p class="font-display text-sm font-bold tracking-[0.2em] text-white">ANZAS GLOBAL EDUCATION CEBU</p>
+          <p class="text-xs text-white/40 mt-1">100人留学プロジェクト</p>
+        </div>
+      </div>
+      <a href="https://anzas-global.com/" target="_blank" rel="noopener noreferrer"
+         class="inline-flex items-center gap-2 text-sm font-medium text-white/70 hover:text-gold transition-colors">
+        anzas-global.com <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+      </a>
+    </div>
+    <div class="mt-10 pt-8 border-t border-white/10 flex flex-col sm:flex-row gap-3 sm:items-center sm:justify-between text-xs text-white/35">
+      <p>© 2026 ANZAS GLOBAL EDUCATION CEBU. All rights reserved.</p>
+      <p>セブ島（フィリピン）｜ 約100名予定 ｜ 参加費 298,000円（税込）</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ MOBILE STICKY CTA ============ -->
+<div class="lg:hidden fixed bottom-0 inset-x-0 z-50 bg-white/95 backdrop-blur border-t border-slate-200 px-4 py-3"
+     style="padding-bottom:calc(0.75rem + env(safe-area-inset-bottom));">
+  <a href="#apply"
+     class="flex items-center justify-center gap-2 rounded-full bg-gold py-3.5 text-sm font-bold text-ink shadow-lg shadow-gold/30 active:scale-[.98] transition-transform">
+    <i class="fa-solid fa-fire text-gold600"></i>
+    5/20(水) 募集開始！詳細・応募はこちら
+  </a>
+</div>
+<div class="lg:hidden h-20" aria-hidden="true"></div>
+
+<script>
+  // ヘッダー：スクロールで背景表示
+  const header = document.getElementById('siteHeader');
+  const onScroll = () => {
+    if (window.scrollY > 40) {
+      header.classList.add('bg-white/90','backdrop-blur-md','shadow-sm');
+    } else {
+      header.classList.remove('bg-white/90','backdrop-blur-md','shadow-sm');
+    }
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, { passive: true });
+
+  // スクロール・フェードイン
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((e) => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal').forEach((el) => io.observe(el));
+</script>
+
+</body>
+</html>
